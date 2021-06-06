@@ -45,10 +45,10 @@ public class AirlineController {
 
 	}
 
-	@GetMapping("/getAirlineAircrafts/{airlineId}")
+	@GetMapping("/getAllAirlineAircrafts/{airlineId}")
 	@ResponseBody
-	public List<Aircraft> getAirlineAircrafts(@PathVariable Long airlineId) throws AirlinesException {
-		return airlineService.getAirlineAircrafts(airlineId);
+	public List<Aircraft> getAllAirlineAircrafts(@PathVariable Long airlineId) throws AirlinesException {
+		return airlineService.getAllAirlineAircrafts(airlineId);
 	}
 
 	@PutMapping("/sellAircraft/{aircraftId}/{airlineId}")

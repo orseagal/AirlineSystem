@@ -49,7 +49,7 @@ public class AirlineServiceImpl implements AirlineService {
 	 * Fetching all the Aircrafts from specific airline 
 	 */
 	@Override
-	public List<Aircraft> getAirlineAircrafts(long airlineId) throws AirlinesException {
+	public List<Aircraft> getAllAirlineAircrafts(long airlineId) throws AirlinesException {
 
 		if (airlineRepository.existsById(airlineId)) {
 			return aircraftRepository.getAllAircraftByAirlineId(airlineId);

@@ -12,7 +12,7 @@ public interface AirlineService {
 
 	public List<Aircraft> getAllAircrafts() throws AirlinesException;
 	
-	public List<Aircraft> getAirlineAircrafts (long airlineId) throws AirlinesException;
+	public List<Aircraft> getAllAirlineAircrafts (long airlineId) throws AirlinesException;
 	
 	public void addAirline(Airline airline) throws AirlinesException;
 
